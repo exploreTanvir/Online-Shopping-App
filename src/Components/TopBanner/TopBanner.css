@@ -1,0 +1,14 @@
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topBanner {
+  background: #efeeee;
+}
+.feature {
+  border-radius: 60px;
+}
+.top{
+  border-radius: 27%;
+}
