@@ -1,4 +1,5 @@
 import React from 'react'
+import BarazMall from './Components/BarazMall/BarazMall'
 import Carousel from './Components/Carousel/Carousel'
 import FlashSale from './Components/FlashSale/FlashSale'
 import TopBanner from './Components/TopBanner/TopBanner'
@@ -13,6 +14,7 @@ const App = () => {
       <Carousel/>
       <TopBanner/>
       <FlashSale/>
+      <BarazMall/>
     </div>
   )
 }

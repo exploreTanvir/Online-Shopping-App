@@ -5,3 +5,19 @@
 .bg-brand {
   background: #efeeee;
 }
+.card-title {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.card-price {
+  color: #f57224;
+  font-size: 18px;
+}
+.card-text {
+  font-size: 12px;
+}
+.card-body:hover {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 1px 6px 0px rgba(142, 142, 142, 0.72);
+}
