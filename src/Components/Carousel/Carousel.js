@@ -1,11 +1,6 @@
 import React from 'react'
+import CarouselData from '../../Data/CarouselData'
 import slider1 from "../../images/slider1.jpg"
-import slider2 from "../../images/slider2.jpg"
-import slider3 from "../../images/slider3.jpg"
-import slider4 from "../../images/slider4.jpg"
-import slider5 from "../../images/slider5.jpg"
-
-
 
 const Carousel = () => {
   return (
@@ -19,9 +14,14 @@ const Carousel = () => {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={slider1} className="d-block w-100 img-fluid" alt="Slider product"/>
+      <img  src={slider1} className="d-block w-100 img-fluid" alt="Slider product"/>
     </div>
-    <div className="carousel-item">
+      {CarouselData.map(item=>
+      <div className="carousel-item">
+      <img key={item.id} src={item.photo} className="d-block w-100 img-fluid" alt="Slider product"/>
+    </div>
+        )}
+    {/* <div className="carousel-item">
       <img src={slider2} className="d-block w-100 img-fluid" alt="Slider product"/>
     </div>
     <div className="carousel-item">
@@ -32,7 +32,7 @@ const Carousel = () => {
     </div>
     <div className="carousel-item">
       <img src={slider5} className="d-block w-100 img-fluid" alt="Slider product"/>
-    </div>
+    </div> */}
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>

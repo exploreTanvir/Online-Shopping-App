@@ -1,5 +1,7 @@
-import React from 'react'
-import "./Navbar.css"
+import React from 'react';
+import navbarData from './../../Data/NavbarData';
+import "./Navbar.css";
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg">
@@ -10,27 +12,11 @@ const Navbar = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ms-auto text-center">
-        <li className="nav-item">
-          <a className="nav-link" href="/">SAVE MORE ON APP</a>
+        {navbarData.map(item=>
+          <li key={item.id} className="nav-item">
+          <a className="nav-link" href="/">{item.name}</a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">SELL ON BARAZ</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">CUSTOMER CARE</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">TRACK MY ORDER</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">SIGNUP/LOGIN</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">BARAZ AFFILIATE PROGRAM</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">ভাষা</a>
-        </li>
+        )}
       </ul>
     </div>
   </div>
